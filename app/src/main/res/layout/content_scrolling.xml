@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petron.myapplication.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling"
+    tools:layout_marginLeft="16dp"
+    tools:layout_marginRight="16dp">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        tools:cardCornerRadius="2dp"
+        tools:cardElevation="20dp"
+        app:cardElevation="17dp"
+        android:layout_height="wrap_content"
+        tools:paddingTop="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/cardView_presente"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_titulo_bateria_presente"
+                tools:text="@string/bateria"
+                android:textSize="30sp"
+                android:textColor="@color/primary_text"
+                android:text="@string/bateria"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resultado_bateria_presente"
+                android:layout_below="@id/textView_titulo_bateria_presente"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp"
+                android:paddingLeft="8dp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        tools:cardCornerRadius="2dp"
+        tools:cardElevation="20dp"
+        app:cardElevation="17dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/cardView_estado"
+        app:cardCornerRadius="6dp"
+        android:layout_below="@+id/cardView_presente"
+        android:paddingTop="8dp"
+        android:layout_alignRight="@+id/cardView_presente"
+        android:layout_alignEnd="@+id/cardView_presente"
+        android:layout_alignLeft="@+id/cardView_presente"
+        android:layout_alignStart="@+id/cardView_presente"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_titulo_bateria_estado"
+                tools:text="@string/estado"
+                android:textSize="30sp"
+                android:textColor="@color/primary_text"
+                android:text="@string/estado"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resultado_bateria_estado"
+                android:layout_below="@id/textView_titulo_bateria_estado"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp"
+                android:paddingLeft="8dp" />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        tools:cardCornerRadius="2dp"
+        tools:cardElevation="20dp"
+        app:cardElevation="17dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/cardView_vida"
+        app:cardCornerRadius="6dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/cardView_estado"
+        android:layout_alignLeft="@+id/cardView_estado"
+        android:layout_alignStart="@+id/cardView_estado"
+        android:layout_alignRight="@+id/cardView_estado"
+        android:layout_alignEnd="@+id/cardView_estado"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_titulo_bateria_vida"
+                android:textSize="30sp"
+                android:textColor="@color/primary_text"
+                android:text="@string/vida"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resultado_bateria_vida"
+                android:layout_below="@id/textView_titulo_bateria_vida"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp"
+                android:paddingLeft="8dp" />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        tools:cardCornerRadius="2dp"
+        tools:cardElevation="20dp"
+        app:cardElevation="17dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/cardView_nivel"
+        app:cardCornerRadius="6dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/cardView_vida"
+        android:layout_alignLeft="@+id/cardView_vida"
+        android:layout_alignStart="@+id/cardView_vida"
+        android:layout_alignRight="@+id/cardView_vida"
+        android:layout_alignEnd="@+id/cardView_vida"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_titulo_bateria_nivel"
+            android:textSize="30sp"
+            android:textColor="@color/primary_text"
+            android:text="@string/nivel"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_resultado_bateria_nivel"
+            android:layout_below="@id/textView_titulo_bateria_nivel"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:paddingLeft="8dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_resultado_bateria_nivel"
+            android:paddingLeft="8dp"
+            android:max="100"
+            android:minHeight="10dp"
+            android:minWidth="300dip"
+            android:id="@+id/progressBar"
+            tools:progressTint="@color/colorAccent"
+            android:progressBackgroundTint="@android:color/holo_orange_dark"
+            android:paddingRight="8dp" />
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                tools:cardCornerRadius="2dp"
+                tools:cardElevation="20dp"
+                app:cardElevation="17dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:id="@+id/cardView_alimentacion"
+                app:cardCornerRadius="6dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/cardView_nivel"
+                android:layout_alignLeft="@+id/cardView_nivel"
+                android:layout_alignStart="@+id/cardView_nivel"
+                android:layout_alignRight="@+id/cardView_nivel"
+                android:layout_alignEnd="@+id/cardView_nivel"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_titulo_bateria_alimentacion"
+                        android:textSize="30sp"
+                        android:textColor="@color/primary_text"
+                        android:text="@string/fuente_alimentacion"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_resultado_bateria_alimentacion"
+                        android:layout_below="@id/textView_titulo_bateria_alimentacion"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="18sp"
+                        android:paddingLeft="8dp" />
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                tools:cardCornerRadius="2dp"
+                tools:cardElevation="20dp"
+                app:cardElevation="17dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:id="@+id/cardView_tecnologia"
+                app:cardCornerRadius="6dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/cardView_alimentacion"
+                android:layout_alignLeft="@+id/cardView_alimentacion"
+                android:layout_alignStart="@+id/cardView_alimentacion"
+                android:layout_alignRight="@+id/cardView_alimentacion"
+                android:layout_alignEnd="@+id/cardView_alimentacion"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_titulo_bateria_tecnologia"
+                        android:textSize="30sp"
+                        android:textColor="@color/primary_text"
+                        android:text="@string/tecnologia"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_resultado_bateria_tecnologia"
+                        android:layout_below="@id/textView_titulo_bateria_tecnologia"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="18sp"
+                        android:paddingLeft="8dp" />
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                tools:cardCornerRadius="2dp"
+                tools:cardElevation="20dp"
+                app:cardElevation="17dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:id="@+id/cardView_temperatura"
+                app:cardCornerRadius="6dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/cardView_tecnologia"
+                android:layout_alignLeft="@+id/cardView_tecnologia"
+                android:layout_alignStart="@+id/cardView_tecnologia"
+                android:layout_alignRight="@+id/cardView_tecnologia"
+                android:layout_alignEnd="@+id/cardView_tecnologia"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_titulo_bateria_temperatura"
+                        android:textSize="30sp"
+                        android:textColor="@color/primary_text"
+                        android:text="@string/temperatura"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_resultado_bateria_temperatura"
+                        android:layout_below="@id/textView_titulo_bateria_temperatura"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="18sp"
+                        android:paddingLeft="8dp" />
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                tools:cardCornerRadius="2dp"
+                tools:cardElevation="20dp"
+                app:cardElevation="17dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:id="@+id/cardView_voltage"
+                app:cardCornerRadius="6dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/cardView_temperatura"
+                android:layout_alignLeft="@+id/cardView_temperatura"
+                android:layout_alignStart="@+id/cardView_temperatura"
+                android:layout_alignRight="@+id/cardView_temperatura"
+                android:layout_alignEnd="@+id/cardView_temperatura"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="60dp">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_titulo_bateria_voltage"
+                        android:textSize="30sp"
+                        android:textColor="@color/primary_text"
+                        android:text="@string/voltage"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_resultado_bateria_voltage"
+                        android:layout_below="@id/textView_titulo_bateria_voltage"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="18sp"
+                        android:paddingLeft="8dp" />
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

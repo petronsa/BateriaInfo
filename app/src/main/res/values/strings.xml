@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Bateria Info</string>
+    <string name="salir">Salir</string>
+    <string name="si">Cargando por</string>
+    <string name="usb">USB</string>
+    <string name="ac">Corriente</string>
+    <string name="presente">Presente</string>
+    <string name="no_presente">No presente</string>
+    <string name="vida_desconocida">Desconocida</string>
+    <string name="vida_buena">Buena</string>
+    <string name="vida_calentamiento">Sobrecalentada</string>
+    <string name="vida_muerta">Muerta</string>
+    <string name="vida_sobrevolataje">Sobrevoltaje</string>
+    <string name="vida_fallo">Fallo no especificado</string>
+    <string name="vida_calentada">Caliente</string>
+    <string name="vida_nosaber">Error</string>
+    <string name="estado_bat1_desconocido">Desconocido</string>
+    <string name="estado_bat2_cargando">Cargando</string>
+    <string name="estado_bat3_descargando">Descargando</string>
+    <string name="estado_bat4_nocarga">No carga</string>
+    <string name="estado_bat5_llena">Llena</string>
+    <string name="error">Error</string>
+    <string name="enchufe_no">No conectada</string>
+    <string name="enchufe_ac">Conectada a corriente</string>
+    <string name="enchfe_usb">Conectado a USB</string>
+    <string name="enchfe_wireless">Conector inalambrico</string>
+    <string name="enchufe_desconocido">Conector desconocido</string>
+    <string name="bateria">Bateria</string>
+    <string name="estado">Estado</string>
+    <string name="vida">Vida</string>
+    <string name="nivel">Nivel</string>
+    <string name="fuente_alimentacion">Fuente de alimentacion</string>
+    <string name="tecnologia">Tecnologia</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="voltage">Voltaje</string>
+    <string name="milivoltios">Milivoltios</string>
+
+</resources>
