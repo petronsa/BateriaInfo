@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Batterie Info</string>
+    <string name="bateria">Batterie</string>
+    <string name="enchfe_usb">USB</string>
+    <string name="enchfe_wireless">Wireless</string>
+    <string name="enchufe_ac">Connecté à courant</string>
+    <string name="enchufe_desconocido">Inconnu</string>
+    <string name="enchufe_no">Non connecté</string>
+    <string name="estado_bat1_desconocido">Inconnu</string>
+    <string name="vida_desconocida">Inconnu</string>
+    <string name="error">Erreur</string>
+    <string name="vida_nosaber">Erreur</string>
+    <string name="estado">Etat</string>
+    <string name="estado_bat2_cargando">Chargement</string>
+    <string name="estado_bat3_descargando">Téléchargement</string>
+    <string name="estado_bat4_nocarga">Ne charge pas</string>
+    <string name="estado_bat5_llena">Complet</string>
+    <string name="fuente_alimentacion">Source de courant</string>
+    <string name="milivoltios">Volt</string>
+    <string name="nivel">Niveau</string>
+    <string name="no_presente">Pas présent</string>
+    <string name="presente">Présent</string>
+    <string name="salir">Sortie</string>
+    <string name="si">Chargement par</string>
+    <string name="tecnologia">Technologie</string>
+    <string name="temperatura">Température</string>
+    <string name="usb">USB</string>
+    <string name="vida">Vie</string>
+    <string name="vida_buena">Bonne</string>
+    <string name="vida_calentada">Chaud</string>
+    <string name="vida_calentamiento">Surchauffée</string>
+    <string name="vida_fallo">Aucune défaillance spécifique</string>
+    <string name="vida_muerta">Mort</string>
+    <string name="vida_sobrevolataje">Surtension</string>
+    <string name="voltage">Tension</string>
+</resources>

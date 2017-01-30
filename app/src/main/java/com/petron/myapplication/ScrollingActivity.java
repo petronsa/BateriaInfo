@@ -53,14 +53,14 @@ public class ScrollingActivity extends AppCompatActivity {
         tv_bat_temperatura = (TextView)findViewById(R.id.textView_resultado_bateria_temperatura);
         tv_bat_voltage = (TextView)findViewById(R.id.textView_resultado_bateria_voltage);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+      /*  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
         this.registerReceiver(this.batteryInfoReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
     }
 
@@ -148,11 +148,14 @@ public class ScrollingActivity extends AppCompatActivity {
             int  temperatura= intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE,0);
             float temperatura_redondeada = ((float) temperatura) / 10;
             double tem_re_f = temperatura_redondeada*(1.8+32)/10;
-            tv_bat_temperatura.setText(""+temperatura_redondeada+" ºC"+ "        "+ tem_re_f+ " ºF");
+            String grafaren = String.format("%.1f",tem_re_f);
+            tv_bat_temperatura.setText(""+temperatura_redondeada+" ºC"+ "        "+ grafaren+ " ºF");
             //Acaba temperatura de la bateria
             //Empieza el voltaje de la bateria
             int  voltaje= intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE,0);
-            tv_bat_voltage.setText(""+voltaje*0.001+" "+ getString(R.string.milivoltios));
+            double voltaje1 = voltaje*0.001;
+            String volt = String.format("%.1f",voltaje1);
+            tv_bat_voltage.setText(""+volt+" "+ getString(R.string.milivoltios));
             //Acaba el voltaje de la bateria
         }
     };
